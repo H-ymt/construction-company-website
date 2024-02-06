@@ -6,12 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}' --plugin=prettier-plugin-tailwindcss",
     "lint": "next lint --fix",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}' --plugin=prettier-plugin-tailwindcss"
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.2",
     "next": "14.1.0",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
@@ -28,5 +31,12 @@
     "tailwindcss": "^3.3.0",
     "eslint": "^8",
     "eslint-config-next": "14.1.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "bun lint",
+      "bun format",
+      "bun lint"
+    ]
   }
 }
