@@ -1,10 +1,13 @@
 import type { Metadata } from 'next'
-import { Source_Serif_4 } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
+import BaseLayout from './_layouts/BaseLayout'
+import SideMenu from './_components/SideMenu'
 
-const serif = Source_Serif_4({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://construction-company-website-nine.vercel.app/'),
   title: {
     default: 'Construction Company',
     template: '%s | Construction Company',
@@ -38,8 +41,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={serif.className}>
-        <main>{children}</main>
+      <body className={inter.className}>
+        <BaseLayout>
+          <SideMenu />
+          <main className="col-start-5 col-end-12 row-start-1 row-end-auto">
+            {children}
+          </main>
+        </BaseLayout>
       </body>
     </html>
   )
