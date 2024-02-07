@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import SideMenuInfo from './SideMenuInfo'
 import { globalNavMenu } from '@/constants'
+import sideMenuImage from '@/public/image_sidelink.jpg'
 
 export default function SideMenu() {
   const pathname = usePathname()
@@ -25,11 +26,12 @@ export default function SideMenu() {
       </ul>
 
       <Image
-        src="/image_sidelink.jpg"
-        width="640"
-        height="963"
+        src={sideMenuImage}
+        width="200"
+        height="300"
         alt=""
-        className="rounded-md"
+        className="rounded-md backdrop-blur-[0.7px]"
+        placeholder="blur"
       />
 
       <SideMenuInfo />
