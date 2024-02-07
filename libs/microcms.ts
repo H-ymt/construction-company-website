@@ -70,7 +70,7 @@ export const getCategoryList = async (queries?: MicroCMSQueries) => {
   return listData
 }
 
-export const gerBlogsDetail = async (
+export const getBlogsDetail = async (
   contentId: string,
   queries?: MicroCMSQueries
 ) => {

@@ -11,10 +11,13 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@types/highlight.js": "^10.1.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "cheerio": "^1.0.0-rc.12",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "eslint-config-prettier": "^9.1.0",
+    "hljs": "^6.2.3",
     "husky": "^9.0.10",
     "lint-staged": "^15.2.2",
     "lucide-react": "^0.323.0",
