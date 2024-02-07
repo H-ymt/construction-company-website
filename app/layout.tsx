@@ -42,9 +42,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <header className="h-20"></header>
         <BaseLayout>
           <SideMenu />
-          <main className="col-start-5 col-end-12 row-start-1 row-end-auto">
+          <main className="col-start-4 col-end-12 row-start-1 row-end-auto pl-10">
             {children}
           </main>
         </BaseLayout>

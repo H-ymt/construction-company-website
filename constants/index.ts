@@ -29,3 +29,5 @@ export const globalNavMenu = [
     route: '/contact',
   },
 ]
+
+export const BLOG_LIST_LIMIT = 4
