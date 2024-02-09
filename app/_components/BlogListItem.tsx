@@ -11,10 +11,10 @@ export default async function BlogListItem({ blogs }: BlogListItemProps) {
   const formattedDate = blogs.publishedAt ? formateDate(blogs.publishedAt) : ''
 
   return (
-    <li className="group group flex justify-between border-b pb-3 pt-3 transition hover:text-primary/90">
+    <li className="group group flex justify-between border-b px-2 pb-2 pt-2 transition hover:text-primary/90">
       <Link
         href={`blog/${blogs.id}`}
-        className="item flex w-full items-center gap-4 pl-2 text-lg"
+        className="item flex w-full items-center gap-4 text-lg"
       >
         <span className="text-base">{formattedDate}</span>
         <span className="rounded-sm bg-secondary-foreground px-2 py-0.5 text-xs text-white transition group-hover:bg-primary/90">
@@ -24,7 +24,7 @@ export default async function BlogListItem({ blogs }: BlogListItemProps) {
       </Link>
       <ArrowRightCircle
         strokeWidth={1.5}
-        className="-translate-x-3 transition-all group-hover:-translate-x-2 group-hover:text-primary/90"
+        className="translate-x-0 transition-all group-hover:translate-x-1 group-hover:text-primary/90"
       />
     </li>
   )
