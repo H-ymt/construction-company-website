@@ -17,7 +17,7 @@ export default function SideMenu() {
           <li key={menu.label}>
             <Link
               href={menu.route}
-              className={`block w-full rounded-lg px-4 py-3 hover:text-primary ${pathname === menu.route ? 'bg-primary/70 hover:text-foreground' : ''}`}
+              className={`block w-full rounded-lg px-4 py-3 transition-all hover:bg-muted ${pathname === menu.route ? 'bg-primary/70 hover:bg-primary/70' : ''}`}
             >
               {menu.label}
             </Link>
