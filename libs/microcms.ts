@@ -29,7 +29,7 @@ export type Blogs = {
   title: string
   content: string
   eyecatch: MicroCMSImage
-  category: Category[]
+  category: Category
   meta: Meta
 }
 
