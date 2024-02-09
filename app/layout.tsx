@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Noto_Sans_JP } from 'next/font/google'
 import './globals.css'
 import BaseLayout from './_layouts/BaseLayout'
 import SideMenu from './_components/SideMenu'
 
-const inter = Inter({ subsets: ['latin'] })
+const notoSans = Noto_Sans_JP({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://construction-company-website-nine.vercel.app/'),
@@ -41,11 +41,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={notoSans.className}>
         <header className="h-20"></header>
         <BaseLayout>
           <SideMenu />
-          <main className="col-start-4 col-end-12 row-start-1 row-end-auto pl-10">
+          <main className="col-start-4 col-end-12 row-start-1 row-end-auto md:pl-10">
             {children}
           </main>
         </BaseLayout>
