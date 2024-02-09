@@ -1,10 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Mulish } from 'next/font/google'
 import './globals.css'
 import BaseLayout from './_layouts/BaseLayout'
 import SideMenu from './_components/SideMenu'
 
-const inter = Inter({ subsets: ['latin'] })
+const mulish = Mulish({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://construction-company-website-nine.vercel.app/'),
@@ -41,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={mulish.className}>
         <header className="h-20"></header>
         <BaseLayout>
           <SideMenu />
