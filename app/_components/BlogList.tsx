@@ -15,7 +15,7 @@ export default function BlogList({ articles }: BlogListProps) {
   }
 
   return (
-    <ul>
+    <ul className="w-fit">
       {articles.map((article) => (
         <BlogListItem key={article.id} blogs={article} />
       ))}

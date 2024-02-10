@@ -22,10 +22,8 @@ export default async function Home() {
       </section>
 
       <section>
-        <h2>News</h2>
-        <div>
-          <BlogList articles={data.contents} />
-        </div>
+        <h2>Blog</h2>
+        <BlogList articles={data.contents} />
       </section>
     </>
   )
