@@ -11,7 +11,7 @@ export default async function BlogListItem({ blogs }: BlogListItemProps) {
   const formattedDate = blogs.publishedAt ? formateDate(blogs.publishedAt) : ''
 
   return (
-    <li className="group group flex justify-between border-b px-2 pb-2 pt-2 transition hover:text-primary/90">
+    <li className="group group flex justify-between border-b px-2 pb-2 pt-2 transition hover:border-primary/70 hover:text-primary/90">
       <Link
         href={`blog/${blogs.id}`}
         className="item flex w-full items-center gap-4 text-lg"
