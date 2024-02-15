@@ -22,7 +22,7 @@ export default async function BlogListItem({ blogs }: BlogListItemProps) {
             width={blogs.eyecatch.width}
             height={blogs.eyecatch.height}
             alt="Blog eyecatch"
-            className="max-w-80 rounded-md"
+            className="rounded-md"
           />
         )}
         <div className="flex items-center gap-2">

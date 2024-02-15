@@ -60,6 +60,6 @@
     @apply text-2xl;
   }
   img {
-    @apply max-w-full;
+    @apply inline-block max-w-full;
   }
 }

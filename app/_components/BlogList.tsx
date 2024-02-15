@@ -15,7 +15,7 @@ export default function BlogList({ articles }: BlogListProps) {
   }
 
   return (
-    <ul className="grid-cols-auto-fill-80 grid w-fit gap-10">
+    <ul className="grid w-fit grid-cols-2 gap-8 py-6">
       {articles.map((article) => (
         <BlogListItem key={article.id} blogs={article} />
       ))}
