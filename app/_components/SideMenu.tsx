@@ -11,7 +11,7 @@ export default function SideMenu() {
   const pathname = usePathname()
 
   return (
-    <aside className="col-start-1 col-end-4 row-start-1 row-end-auto max-md:hidden">
+    <aside className="w-full max-w-72 max-lg:hidden">
       <ul className="flex flex-col gap-1 pb-5">
         {globalNavMenu.map((menu) => (
           <li key={menu.label}>
