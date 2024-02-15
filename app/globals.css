@@ -59,4 +59,7 @@
   h2 {
     @apply text-2xl;
   }
+  img {
+    @apply max-w-full;
+  }
 }
