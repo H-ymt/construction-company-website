@@ -16,9 +16,27 @@ export default async function Home() {
           </span>
           Realize the kind of space you want
         </p>
-        <h1 className="text-center text-5xl font-semibold leading-tight">
+        <h1 className="pb-6 text-center text-3xl font-semibold leading-tight md:text-5xl">
           Create a future with reliable technology
         </h1>
+        <p className="text-center text-lg">
+          Welcome to our website dedicated to shaping a future driven by dependable
+          technology. We believe that by harnessing the power of reliable and
+          innovative technologies, we can create a world that is more efficient,
+          sustainable, and connected.
+        </p>
+      </section>
+
+      <section>
+        <h2>News</h2>
+        <ul className="flex flex-col gap-2 pt-4">
+          <li className="flex items-center gap-4">
+            <time>2022-01-01</time>Dummy News
+          </li>
+          <li className="flex items-center gap-4">
+            <time>2022-01-01</time>Dummy News
+          </li>
+        </ul>
       </section>
 
       <section>
